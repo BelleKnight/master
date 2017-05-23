@@ -1,0 +1,179 @@
+/*
+ * Globals
+ */
+
+/* Links */  
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display:400,400i,700,700i');   
+
+a,
+a:focus,
+a:hover {
+  color: #FAFAFA;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {  
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #01bc9d;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #545454;
+}
+body {
+  color: #FAFAFA;
+  font-family: 'Playfair Display', sans-serif;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {                  
+  background-color: #aaffd4
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {    
+color: #d20034 ;
+font-family: 'Playfair Display', serif;
+font-weight: 400i;
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {    
+  font-family: 'Fjalla One', sans-serif;        
+  text-transform:uppercase;
+  padding: .25rem 0;  
+  font-weight: bold;
+  color: rgba(50, 50, 50 ,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(50, 50, 50,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #050573;
+  border-bottom-color: #4b4b4b;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;    
+  background-color: #4b4b4b
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+.cover-heading {
+  font-family: 'Playfair Display', serif;;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #7fffd4
+}
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
